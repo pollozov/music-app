@@ -46,7 +46,6 @@ const TopPlay = () => {
   });
 
   const topPlays = data ? data.tracks.slice(0, 5) : [];
-  console.log(topPlays)
 
   const handlePauseClick = () => {
     dispatch(playPause(false));
@@ -96,6 +95,7 @@ const TopPlay = () => {
           freeMode
           centeredSlides
           centeredSlidesBounds
+          modules={[FreeMode]}
           className="mt-4"
         >
           {topPlays?.slice(0, 5).map((artist) => (
