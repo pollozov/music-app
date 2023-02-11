@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const DetailsHeader = ({ artistId, artistData, songData }) => {
   // const artist = artistData?.artists[artistId]?.attributes;
   const artist = artistData?.data?.[0].attributes;
-  console.log('artist -   ', artist)
 
   return (
     <div className="relative w-full flex flex-col">
